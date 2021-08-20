@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resourses  :movies only [:new,create]
-  resuerces  :lists
-  resourses  :bookmarcks
+  root to: 'artcles#index'
+  resources :articles, except: :index
 end
-
